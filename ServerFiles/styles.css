@@ -1,0 +1,104 @@
+body {
+    background-color: #1a1a1a; /* Dark background */
+    background-image: 
+        url('cookie_files/creepy_face.png'),
+        url('cookie_files/creepy_face.png'),
+        url('cookie_files/creepy_face.png');
+    background-size: 200px 200px; /* Size of each face */
+    background-repeat: no-repeat; /* No repeat */
+    background-position: 
+        10% 35%, /* Position for first face */
+        70% 30%, /* Position for second face */
+        80% 80%; /* Position for third face */
+    color: #ffffff; /* Light text color */
+    font-family: 'Creepster', cursive; /* Spooky font */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Other styles remain the same */
+
+
+header {
+    background-color: #333; /* Dark header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #b30000; /* Red border */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #b30000; /* Creepy red */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Bright yellow on hover */
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+.cookie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.cookie-item {
+    background-color: #444; /* Darker item background */
+    border: 1px solid #b30000; /* Red border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.cookie-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.hidden-message {
+    color: #ffcc00; /* Yellow for hidden messages */
+    font-style: italic;
+}
+
+.fullscreen {
+    overflow: hidden; /* Hide scrollbars */
+}
+
+/* Add creepy sound effect on hover for the cookie items */
+.cookie-item:hover {
+    cursor: pointer; /* Change cursor to pointer */
+    animation: shake 0.5s; /* Shake effect */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Gun Game</title>
+    <link rel="stylesheet" href="gun.css">
+    <style>
+        /* Basic reset to prevent scroll bars */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Styling for the water gun icon */
+        #waterGunIcon {
+            position: fixed;
+            bottom: 250px;
+            left: 50%;
+            transform-origin: center bottom;
+            width: 80px;
+            transition: transform 0.1s ease-out;
+            pointer-events: none; /* prevents blocking clicks elsewhere */
+        }
+
+        #win-message {
+            display: none; /* Hide until winning condition is met */
+            font-size: 20px;
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="game-container">
+        
+        <h1>Help Clean The CS Majors!</h1>
+        <p>Help spray the CS majors with water to give them their first shower in weeks!</p>
+        <div id="score">Score: 0</div>
+        <div id="targets"></div>
+
+        <button id="start-button">Start Game</button>
+        <div id="win-message">You Win! The key is: <strong>deodorant</strong></div>
+    </div>
+
+    <!-- Rotating Water Gun Icon -->
+    <a href="gunGame.html">
+        <img src="water-gun.png" id="waterGunIcon" alt="Water Gun Icon">
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Select the water gun icon element
+        const waterGunIcon = document.getElementById('waterGunIcon');
+
+        // Add an event listener to track mouse movement
+        document.addEventListener('mousemove', (event) => {
+            // Get the gun icon's position
+            const iconRect = waterGunIcon.getBoundingClientRect();
+            const iconCenterX = iconRect.left + iconRect.width / 2;
+            const iconCenterY = iconRect.bottom;
+
+            // Calculate the angle between the gun icon and the mouse
+            const angle = Math.atan2(event.clientY - iconCenterY, event.clientX - iconCenterX) * (180 / Math.PI);
+
+            // Apply rotation to point the gun towards the mouse
+            waterGunIcon.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+        });
+    </script>
+</body>
+</html>

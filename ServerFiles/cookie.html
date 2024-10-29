@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Delights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cookie Delights!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#cookies">Our Cookies</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Cookie Delights, we offer the freshest, most delicious cookies made with love. Our recipes are crafted from the finest ingredients to ensure every bite is a delight!</p>
+    </section>
+
+    <section id="cookies">
+        <h2>Our Cookies</h2>
+        <div class="cookie-list">
+            <div class="cookie-item">
+                <h3>Double Chunk Chocolate Cookie</h3>
+                <p>Classic chocolate chip cookies, soft and chewy.</p>
+                <p>Price: $3.00 each</p>
+            </div>
+
+            <div class="cookie-item">
+                <h3>Chocolate Chip</h3>
+                <p>Classic chocolate chip cookies, soft and chewy.</p>
+                <p>Price: $2.00 each</p>
+            </div>
+
+            <div class="cookie-item">
+                <h3>Mary Jane Chocolate Chip</h3>
+                <p>Chocolate chip cookies, with an extra surprise! <a href="#" id="jumpscare-link">Click HERE</a> to see.</p>
+                <p>Price: $5.00 each</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to place an order? Reach out to us!</p>
+        <p>Closely Inspect This! -D.K.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+    <script>
+        document.getElementById('js-submit').addEventListener('click', function() {
+            const answer = document.getElementById('js-answer').value.toLowerCase();
+            if (answer === 'the c') {
+                document.getElementById('js-result').innerText = 'Correct! The first 5 characters are "The c".';
+            } else {
+                document.getElementById('js-result').innerText = 'Try again!';
+            }
+        });
+    </script>
+    
+
+    <footer>
+        <p>&copy; 2024 Cookie Delights. All rights reserved.</p>
+    </footer>
+
+    <!-- 
+    Hey folks, I've hidden the first key behind a riddle: 
+    *I am a gate that needs only one; When you give me zero, I’ll flip it to one. What am I?*
+    The answer to this riddle is the first key.
+    -->
+
+    <script>
+        document.getElementById('jumpscare-link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link action
+
+        const elem = document.documentElement; // Get the entire document element
+        const fullscreenPromise = elem.requestFullscreen ? elem.requestFullscreen() :
+                                elem.mozRequestFullScreen ? elem.mozRequestFullScreen() :
+                                elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() :
+                                elem.msRequestFullscreen ? elem.msRequestFullscreen() : null;
+
+        // Wait for the fullscreen request to complete
+        if (fullscreenPromise) {
+            fullscreenPromise.then(() => {
+
+                document.documentElement.classList.add('fullscreen');
+                document.body.classList.add('fullscreen');
+
+                const blackOverlay = document.createElement('div');
+                blackOverlay.style.position = 'fixed';
+                blackOverlay.style.top = '0';
+                blackOverlay.style.left = '0';
+                blackOverlay.style.width = '100vw';
+                blackOverlay.style.height = '100vh';
+                blackOverlay.style.backgroundColor = 'black';
+                blackOverlay.style.zIndex = '9997'; // Just below the jumpscare image
+
+                const tinyTextImage = document.createElement('img');
+                tinyTextImage.src = 'cookie_files/lookClose.jpg'; // Path to your tiny text image
+                tinyTextImage.style.position = 'fixed';
+                tinyTextImage.style.top = '50%'; // Center vertically
+                tinyTextImage.style.left = '50%'; // Center horizontally
+                tinyTextImage.style.transform = 'translate(-50%, -50%)'; // Adjust for centering
+                tinyTextImage.style.zIndex = '9998'; // Above the black overlay
+                tinyTextImage.style.width = '100px'; // Adjust width as needed
+                tinyTextImage.style.height = 'auto'; // Maintain aspect ratio
+
+                document.body.appendChild(blackOverlay);
+                document.body.appendChild(tinyTextImage);
+                // Wait for 5 seconds
+                setTimeout(() => {
+                // Remove the black overlay
+                document.body.removeChild(blackOverlay);
+                document.body.removeChild(tinyTextImage);
+
+                const audio = new Audio('cookie_files/jumpscare.mp3'); // Path to the jumpscare sound
+                audio.volume = 1.0; // Set volume to full
+                audio.play(); // Play the jumpscare sound
+
+                // Create and display the jumpscare image
+                const jumpscareImage = document.createElement('img');
+                jumpscareImage.src = 'cookie_files/jumpscare_image.gif'; // Replace with your jumpscare image
+                jumpscareImage.style.position = 'fixed';
+                jumpscareImage.style.top = '0'; // Cover the whole screen from the top
+                jumpscareImage.style.left = '0'; // Cover the whole screen from the left
+                jumpscareImage.style.width = '100vw'; // Full width
+                jumpscareImage.style.height = '100vh'; // Full height
+                jumpscareImage.style.objectFit = 'cover'; // Scale the image nicely
+                jumpscareImage.style.zIndex = '9999'; // Bring it to the front
+
+                document.body.appendChild(jumpscareImage);
+
+                // Remove the image after a few seconds
+                setTimeout(() => {
+                    document.body.removeChild(jumpscareImage);
+                    document.documentElement.classList.remove('fullscreen');
+                    document.body.classList.remove('fullscreen');
+                }, 3000); // Adjust time as needed
+            }, 5000);
+            }).catch((error) => {
+                console.error("Error entering fullscreen:", error);
+            });
+        } else {
+            console.warn("Fullscreen API not supported.");
+        }
+    });
+
+    </script>
+    
+</body>
+</html>

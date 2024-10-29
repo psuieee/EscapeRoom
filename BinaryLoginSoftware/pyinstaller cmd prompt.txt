@@ -1,0 +1,123 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\*\Desktop\escape_room> python -m PyInstaller  --name=ESCAPE --onefile --windowed --icon=eyeball.ico ESCAPE.py
+368 INFO: PyInstaller: 6.11.0, contrib hooks: 2024.9
+371 INFO: Python: 3.10.11
+379 INFO: Platform: Windows-10-10.0.22631-SP0
+380 INFO: Python environment: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0
+381 INFO: wrote C:\Users\*\Desktop\escape_room\ESCAPE.spec
+392 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\*\\Desktop\\escape_room',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\python310.zip',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\DLLs',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib',
+ 'C:\\Users\\*\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0',
+ 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages',
+ 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\win32',
+ 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\win32\\lib',
+ 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\Pythonwin',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages',
+ 'C:\\Users\\*\\Desktop\\escape_room']
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.11)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+905 INFO: checking Analysis
+905 INFO: Building Analysis because Analysis-00.toc is non existent
+905 INFO: Running Analysis Analysis-00.toc
+905 INFO: Target bytecode optimization level: 0
+905 INFO: Initializing module dependency graph...
+905 INFO: Initializing module graph hook caches...
+969 INFO: Analyzing base_library.zip ...
+1847 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+1895 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+3027 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+3937 INFO: Caching module dependency graph...
+4034 INFO: Looking for Python shared library...
+4034 INFO: Using Python shared library: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\python310.dll
+4037 INFO: Analyzing C:\Users\*\Desktop\escape_room\ESCAPE.py
+4199 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+4230 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+4310 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+4788 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+4788 INFO: SetuptoolsInfo: initializing cached setuptools info...
+5591 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+5598 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+5661 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+6278 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+6290 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+6393 INFO: Processing standard module hook 'hook-pycparser.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+6708 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+6712 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+6715 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+7282 INFO: Processing standard module hook 'hook-distutils.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+7344 INFO: Processing standard module hook 'hook-distutils.util.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+7557 INFO: Processing standard module hook 'hook-pkg_resources.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+8709 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8814 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8822 INFO: Processing standard module hook 'hook-packaging.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+9267 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+9802 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+10536 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+10987 INFO: Processing standard module hook 'hook-psutil.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+11735 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+12020 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+12230 INFO: Processing standard module hook 'hook-pygame.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\pygame\\__pyinstaller'
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.11)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+12426 INFO: Processing module hooks (post-graph stage)...
+12607 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+12638 INFO: Processing pre-safe-import-module hook 'hook-win32com.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\pre_safe_import_module'
+12722 INFO: Processing standard module hook 'hook-win32com.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+12722 INFO: Processing standard module hook 'hook-pythoncom.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+12811 INFO: Processing standard module hook 'hook-pywintypes.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+13386 INFO: Processing standard module hook 'hook-jinja2.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+13762 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+13836 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+14499 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks'
+14499 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+14912 INFO: Performing binary vs. data reclassification (943 entries)
+15326 INFO: Looking for ctypes DLLs
+15337 INFO: Analyzing run-time hooks ...
+15348 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks'
+15348 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks'
+15351 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks'
+15351 INFO: Including run-time hook 'pyi_rth_pkgres.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks'
+15358 INFO: Including run-time hook 'pyi_rth_pywintypes.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+15360 INFO: Including run-time hook 'pyi_rth_pythoncom.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+15361 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks'
+15361 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks'
+15399 INFO: Looking for dynamic libraries
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.11)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+16313 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\pygame', 'C:\\Users\\*\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\numpy.libs']
+16313 INFO: Extra DLL search directories (PATH): []
+17372 INFO: Warnings written to C:\Users\*\Desktop\escape_room\build\ESCAPE\warn-ESCAPE.txt
+17461 INFO: Graph cross-reference written to C:\Users\*\Desktop\escape_room\build\ESCAPE\xref-ESCAPE.html
+17555 INFO: checking PYZ
+17555 INFO: Building PYZ because PYZ-00.toc is non existent
+17555 INFO: Building PYZ (ZlibArchive) C:\Users\*\Desktop\escape_room\build\ESCAPE\PYZ-00.pyz
+18914 INFO: Building PYZ (ZlibArchive) C:\Users\*\Desktop\escape_room\build\ESCAPE\PYZ-00.pyz completed successfully.
+18958 INFO: checking PKG
+18958 INFO: Building PKG because PKG-00.toc is non existent
+18958 INFO: Building PKG (CArchive) ESCAPE.pkg
+27279 INFO: Building PKG (CArchive) ESCAPE.pkg completed successfully.
+27309 INFO: Bootloader C:\Users\*\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+27309 INFO: checking EXE
+27309 INFO: Building EXE because EXE-00.toc is non existent
+27309 INFO: Building EXE from EXE-00.toc
+27312 INFO: Copying bootloader EXE to C:\Users\*\Desktop\escape_room\dist\ESCAPE.exe
+27494 INFO: Copying icon to EXE
+27524 INFO: Copying 0 resources to EXE
+27524 INFO: Embedding manifest in EXE
+27565 INFO: Appending PKG archive to EXE
+27595 INFO: Fixing EXE headers
+27853 INFO: Building EXE from EXE-00.toc completed successfully.
+PS C:\Users\*\Desktop\escape_room>

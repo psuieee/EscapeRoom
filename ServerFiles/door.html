@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Access</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('door.jpg'); /* Replace with your door image path */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            position: relative; /* Ensure body is the positioning context */
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            position: relative; /* Position context for container */
+            z-index: 10; /* Bring the container above the image */
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745; /* Green button */
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        #creepyImage {
+            display: none; /* Initially hidden */
+            position: fixed; /* Cover the whole screen */
+            top: 0;
+            left: 0;
+            width: 100vw; /* Full width */
+            height: 100vh; /* Full height */
+            background-image: url('nerd.jpg'); /* Replace with your creepy image path */
+            background-size: cover;
+            background-position: center;
+            z-index: 20; /* Bring it above everything else */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="key1" placeholder="3" required>
+        <input type="text" id="key2" placeholder="11" required>
+        <input type="text" id="key3" placeholder="9" required>
+        <br>
+        <button onclick="checkKeys()">Submit</button>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <audio id="creepyAudio" src="scream.mp3" type="audio/mpeg"></audio>
+    <div id="creepyImage"></div>
+
+    <script>
+        function checkKeys() {
+            // Define the correct keys
+            const correctKeys = ['NOT', 'pythonRulez', 'deodorant']; // Replace with actual keys
+
+            // Get input values
+            const inputKey1 = document.getElementById('key1').value;
+            const inputKey2 = document.getElementById('key2').value;
+            const inputKey3 = document.getElementById('key3').value;
+
+            // Check if the input matches the correct keys
+            if (inputKey1 === correctKeys[0] && inputKey2 === correctKeys[1] && inputKey3 === correctKeys[2]) {
+                // Redirect to the secret page if keys are correct
+                window.location.href = 'escape.html'; // Replace with your secret page URL
+            } else {
+                // Show error message
+                document.getElementById('message').innerText = 'Incorrect keys, please try again.';
+
+                // Play the audio if the keys are incorrect
+                const creepyAudio = document.getElementById('creepyAudio');
+                creepyAudio.play();
+
+                // Show the creepy image
+                document.getElementById('creepyImage').style.display = 'block';
+
+                // Hide the creepy image after a certain duration or when audio ends
+                creepyAudio.onended = () => {
+                    document.getElementById('creepyImage').style.display = 'none';
+                };
+            }
+        }
+    </script>
+</body>
+</html>

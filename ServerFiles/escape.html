@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white; /* Text color for visibility */
+            background-image: url('minnesota.jpg'); /* Full-screen background */
+            background-size: cover; /* Ensure the background covers the entire page */
+            background-position: center; /* Center the background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative; /* For absolute positioning of side images */
+        }
+
+        /* Sidebar images */
+        .sidebar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50px; /* Adjust width as needed */
+            background-image: url('kahn.jpg'); /* Sidebar image */
+            background-size: cover; /* Cover the height of the sidebar */
+            background-position: center; /* Center the sidebar image */
+        }
+
+        .left-sidebar {
+            left: 0; /* Position on the left */
+        }
+
+        .right-sidebar {
+            right: 0; /* Position on the right */
+        }
+
+        h1 {
+            font-size: 48px; /* Adjust size as needed */
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+        }
+
+        p {
+            font-size: 24px; /* Adjust size as needed */
+            max-width: 800px; /* Limit paragraph width for readability */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebars -->
+    <div class="sidebar left-sidebar"></div>
+    <div class="sidebar right-sidebar"></div>
+
+    <h1>Hey Folks!</h1>
+    <p>Congratulations on finding all the keys! Howerver, I must unfortunately admit my dissapearance was all made up. I didnt go missing, I came here to the University of Minnesota! You on the other hand, better get moving, otherwise YOU will be missing!</p>
+    <p>- Professor Dan Kahn</p>
+</body>
+</html>

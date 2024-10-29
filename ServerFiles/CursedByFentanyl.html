@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Web Wiki</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px black;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4444;
+            text-shadow: 2px 2px 5px black;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.3s;
+        }
+        li:hover {
+            color: #ff0000;
+        }
+        li::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #ff0000;
+            transform: translateX(-50%) scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        li:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #ff4444;
+        }
+        footer {
+            text-align: center;
+            color: #ff4444;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .warning {
+            font-weight: bold;
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Deep Web Wiki</h1>
+    <p>Welcome to the depths. Here lies access to knowledge best left undiscovered:</p>
+    
+    <ul>
+        <li><a href="http://104.39.58.23:8080/cookie.html">Cookie Information</a></li>
+        <li><a href="http://104.39.58.23:8080/IDs.html">IDs Information</a></li>
+        <li><a href="http://104.39.58.23:8080/Guns.html">Guns Information</a></li>
+
+
+        <li><a href="http://104.39.58.23:8080/drugs.html">Drugs Information</a></li>
+    </ul>
+
+    <audio id="creepyAudio" autoplay loop muted>
+        <source src="creepy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <button id="unmuteAudio">Click Me</button>
+    
+    <script>
+        document.getElementById('unmuteAudio').addEventListener('click', function() {//<li><a href="http://104.39.58.23:8080/CryptoNews.html">Crypto News</a></li>
+            var audio = document.getElementById('creepyAudio');
+            audio.muted = false; // Unmute the audio
+            audio.play(); // Start playing
+        });
+    </script>
+    
+
+
+
+    <footer>
+        <p class="warning">WARNING: Not all knowledge is meant to be known. Tread carefully.</p>
+    </footer>
+
+</body>
+</html>

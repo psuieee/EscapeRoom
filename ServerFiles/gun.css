@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    position: relative;
+}
+
+#water-gun {
+    position: absolute;
+    width: 100px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#score {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    position: relative; /* Make sure it is positioned */
+    z-index: 10; /* Ensure it is above the targets */
+}
+
+#targets {
+    position: absolute; /* Absolute positioning to fill the screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+
+    z-index: 5; /* Adjust z-index if needed */
+}
+
+
+
+.target {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 10; /* Ensures targets appear above other elements */
+    cursor: pointer;
+}
