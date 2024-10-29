@@ -1,0 +1,1 @@
+Code for the software component of our escape room workshop, run on 10/27/2024. The Binary Logic software is an application used to test their experience with binary-decimal conversion, locking access to the computer behind said puzzle. Afterwards, participants had to explore a few 'deep web' websites from the server files in order to find the password.
